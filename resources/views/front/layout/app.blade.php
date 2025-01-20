@@ -142,18 +142,6 @@
                             <li class="menu"><a href="{{ route('login') }}">{{ $page_data->login_title }}</a></li>
                             @endif
 
-                            {{-- <li>
-                                <div class="language-switch">
-                                    <form action="{{ route('front_language') }}" method="post">
-                                        @csrf
-                                        <select name="short_name" onchange="this.form.submit()">
-                                            @foreach($global_language_data as $item)
-                                            <option value="{{ $item->short_name }}" @if($item->short_name == $current_short_name) selected @endif>{{ $item->name }}</option>
-                                            @endforeach
-                                        </select>
-                                    </form>
-                                </div>
-                            </li> --}}
                         </ul>
                     </div>
                 </div>
@@ -198,11 +186,9 @@
                                 <li><a href="{{ route('home') }}">{{ HOME }}</a></li>
                                 <li><a href="{{ route('jadwalshalat') }}">Jadwal Shalat</a></li>
                                 <li><a href="{{ route('zakat_penghasilan') }}">Kalkulator Zakat</a></li>
-
                             </ul>
                         </div>
                     </div>
-
 
                     <div class="col-md-4">
                         <div class="item">
@@ -231,7 +217,6 @@
                                     {{ FOOTER_PHONE }}
                                 </div>
                             </div>
-
                         </div>
                     </div>
                 </div>
@@ -281,6 +266,5 @@
                 });
             </script>
         @endif
-
    </body>
 </html>

@@ -69,6 +69,10 @@ $current_language_id = \App\Models\Language::where('short_name',$current_short_n
                                     <li><a class="dropdown-item" href="{{ route('zakat_fitrah') }}">Zakat Fitrah</a></li>
                                 </ul>
                             </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Laporan Keuangan</a>
+                            </li>
                         </ul>
                     </div>
                 </nav>

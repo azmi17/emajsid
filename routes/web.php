@@ -58,8 +58,6 @@ Route::post('/forget-password-submit', [LoginController::class, 'forget_password
 Route::get('/reset-password/{token}/{email}', [LoginController::class, 'reset_password'])->name('reset_password');
 Route::post('/reset-password-submit', [LoginController::class, 'reset_password_submit'])->name('reset_password_submit');
 
-
-
 /* Author */
 Route::get('/author/home', [AuthorHomeController::class, 'index'])->name('author_home')->middleware('author:author');
 Route::get('/author/edit-profile', [AuthorProfileController::class, 'index'])->name('author_profile')->middleware('author:author');
@@ -71,7 +69,6 @@ Route::get('/author/post/edit/{id}', [AuthorPostController::class, 'edit'])->nam
 Route::post('/author/post/update/{id}', [AuthorPostController::class, 'update'])->name('author_post_update');
 Route::get('/author/post/delete/{id}', [AuthorPostController::class, 'delete'])->name('author_post_delete')->middleware('author:author');
 Route::get('/author/post/tag/delete/{id}/{id1}', [AuthorPostController::class, 'delete_tag'])->name('author_post_delete_tag')->middleware('author:author');
-
 
 /* Admin */
 Route::get('/admin/home', [AdminHomeController::class, 'index'])->name('admin_home')->middleware('admin:admin');
@@ -95,7 +92,6 @@ Route::get('/admin/sub-category/edit/{id}', [AdminSubCategoryController::class, 
 Route::post('/admin/sub-category/update/{id}', [AdminSubCategoryController::class, 'update'])->name('admin_sub_category_update');
 Route::get('/admin/sub-category/delete/{id}', [AdminSubCategoryController::class, 'delete'])->name('admin_sub_category_delete')->middleware('admin:admin');
 
-
 Route::get('/admin/post/show', [AdminPostController::class, 'show'])->name('admin_post_show')->middleware('admin:admin');
 Route::get('/admin/post/create', [AdminPostController::class, 'create'])->name('admin_post_create')->middleware('admin:admin');
 Route::post('/admin/post/store', [AdminPostController::class, 'store'])->name('admin_post_store');
@@ -110,7 +106,6 @@ Route::post('/admin/setting/update', [AdminSettingController::class, 'update'])-
 Route::get('/admin/setting/login', [AdminSettingController::class, 'login'])->name('admin_setting_login')->middleware('admin:admin');
 Route::post('/admin/setting/login/update', [AdminSettingController::class, 'login_update'])->name('admin_setting_login_update');
 
-
 Route::get('/admin/faq/show', [AdminFaqController::class, 'show'])->name('admin_faq_show')->middleware('admin:admin');
 Route::get('/admin/faq/create', [AdminFaqController::class, 'create'])->name('admin_faq_create')->middleware('admin:admin');
 Route::post('/admin/faq/store', [AdminFaqController::class, 'store'])->name('admin_faq_store');
@@ -118,15 +113,12 @@ Route::get('/admin/faq/edit/{id}', [AdminFaqController::class, 'edit'])->name('a
 Route::post('/admin/faq/update/{id}', [AdminFaqController::class, 'update'])->name('admin_faq_update');
 Route::get('/admin/faq/delete/{id}', [AdminFaqController::class, 'delete'])->name('admin_faq_delete')->middleware('admin:admin');
 
-
-
 Route::get('/admin/author/show', [AdminAuthorController::class, 'show'])->name('admin_author_show')->middleware('admin:admin');
 Route::get('/admin/author/create', [AdminAuthorController::class, 'create'])->name('admin_author_create')->middleware('admin:admin');
 Route::post('/admin/author/store', [AdminAuthorController::class, 'store'])->name('admin_author_store');
 Route::get('/admin/author/edit/{id}', [AdminAuthorController::class, 'edit'])->name('admin_author_edit')->middleware('admin:admin');
 Route::post('/admin/author/update/{id}', [AdminAuthorController::class, 'update'])->name('admin_author_update');
 Route::get('/admin/author/delete/{id}', [AdminAuthorController::class, 'delete'])->name('admin_author_delete')->middleware('admin:admin');
-
 
 Route::get('/admin/language/show', [AdminLanguageController::class, 'show'])->name('admin_language_show')->middleware('admin:admin');
 Route::get('/admin/language/create', [AdminLanguageController::class, 'create'])->name('admin_language_create')->middleware('admin:admin');

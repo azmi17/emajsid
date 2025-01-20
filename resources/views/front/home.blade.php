@@ -12,7 +12,7 @@
                         <ul class="my-news-ticker">
                             @php $i=0; @endphp
                             @foreach($post_data as $item)
-                                @php $i++; @endphp                                
+                                @php $i++; @endphp
                                 @if($i>$setting_data->news_ticker_total)
                                     @break
                                 @endif
@@ -26,9 +26,6 @@
     </div>
 </div>
 @endif
-
-
-
 
 <div class="home-main">
     <div class="container">
@@ -75,16 +72,16 @@
                             </div>
                         </div>
                     </div>
-                </div>                
+                </div>
                 @endforeach
             </div>
             <div class="col-lg-4 col-md-12">
                 @php $i=0; @endphp
                 @foreach($post_data as $item)
                 @php $i++; @endphp
-                @if($i==1) 
-                    @continue 
-                @endif                
+                @if($i==1)
+                    @continue
+                @endif
                 @if($i>3)
                     @break
                 @endif
@@ -233,7 +230,7 @@
                                         </div>
                                     </div>
                                 @endforeach
-                                
+
                                 <div class="col-lg-6 col-md-12">
                                     <div class="right-side">
 
@@ -282,7 +279,7 @@
                             </div>
                         </div>
 
-                        
+
                         <!-- // News Of Category -->
 
 
