@@ -39,8 +39,15 @@
                             <input type="text" name="deskripsi" id="deskripsi" class="form-control" value="{{ $lapkeu->deskripsi }}">
                         </div>
 
-                        <div class="form-group mb-3">
+                        <div class="mb-3">
                             <label for="file_path" class="form-label">Unggah Laporan</label>
+
+                            @if($lapkeu->file_path)
+                                <p>File yang diunggah sebelumnya:
+                                    <a href="{{ Storage::url($lapkeu->file_path) }}" target="_blank">Lihat File</a>
+                                </p>
+                            @endif
+
                             <input type="file" name="file_path" id="file_path" class="form-control">
                         </div>
 
