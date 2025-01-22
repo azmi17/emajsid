@@ -27,10 +27,11 @@ use App\Http\Controllers\Admin\AdminLanguageController;
 use App\Http\Controllers\Admin\AdminProfilMasjidController;
 use App\Http\Controllers\Admin\AdminJadwalController;
 use App\Http\Controllers\Admin\AdminInformasiController;
-
+use App\Http\Controllers\Admin\AdminLaporanKeuanganController;
 use App\Http\Controllers\Author\AuthorHomeController;
 use App\Http\Controllers\Author\AuthorProfileController;
 use App\Http\Controllers\Author\AuthorPostController;
+
 
 /* Front End */
 Route::get('/', [HomeController::class, 'index'])->name('home');
@@ -149,3 +150,11 @@ Route::get('/admin/informasi/kas/show', [AdminInformasiController::class, 'show'
 Route::get('/admin/informasi/kas/edit/{id}', [AdminInformasiController::class, 'edit'])->name('admin_kas_edit')->middleware('admin:admin');
 Route::put('/admin/informasi/kas/update/{id}', [AdminInformasiController::class, 'update'])->name('admin_kas_update')->middleware('admin:admin');
 Route::get('/admin/informasi/kas/delete/{id}', [AdminInformasiController::class, 'delete'])->name('admin_kas_delete')->middleware('admin:admin');
+
+Route::get('/admin/laporan/keuangan', [AdminLaporanKeuanganController::class, 'index'])->name('keuangan.index')->middleware('admin:admin');
+Route::get('/admin/laporan/keuangan/create', [AdminLaporanKeuanganController::class, 'create'])->name('keuangan.create')->middleware('admin:admin');
+Route::post('/admin/laporan/keuangan/store', [AdminLaporanKeuanganController::class, 'store'])->name('keuangan.store');
+Route::get('/admin/laporan/keuangan/edit/{id}', [AdminLaporanKeuanganController::class, 'edit'])->name('keuangan.edit')->middleware('admin:admin');
+Route::put('/admin/laporan/keuangan/update/{id}', [AdminLaporanKeuanganController::class, 'update'])->name('keuangan.update')->middleware('admin:admin');
+Route::get('/admin/laporan/keuangan/delete/{id}', [AdminLaporanKeuanganController::class, 'delete'])->name('keuangan.destroy')->middleware('admin:admin');
+

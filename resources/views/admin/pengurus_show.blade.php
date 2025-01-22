@@ -4,11 +4,8 @@
 
 @section('main_content')
 <div class="section-body">
-   
         <div class="row">
             <div class="col-12">
-
-
                 @foreach($profil as $row)
                 <form action="{{ route('admin_profil_masjid_pengurus_update') }}" method="post" enctype="multipart/form-data">
                     @csrf
@@ -32,12 +29,7 @@
                     </div>
                 </form>
                 @endforeach
-
-
-
             </div>
-            
         </div>
-    
 </div>
 @endsection

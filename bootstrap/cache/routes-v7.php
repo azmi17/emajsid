@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Tzyx7QgC8gEH1NL5',
+            '_route' => 'generated::E5jRaJFYUFVzU4XU',
           ),
           1 => NULL,
           2 => 
@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::y3Y8YarvaMq6zuW4',
+            '_route' => 'generated::bcEqlOPQisPoMWfX',
           ),
           1 => NULL,
           2 => 
@@ -1334,10 +1334,89 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/admin/laporan/keuangan' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'keuangan.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/laporan/keuangan/store' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'keuangan.store',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/laporan/keuangan/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'keuangan.create',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/laporan/keuangan/show' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'keuangan.show',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/subcategory\\-by\\-category/([^/]++)(*:42)|/news\\-detail/([^/]++)(*:71)|/category/([^/]++)(*:96)|/tag/([^/]++)(*:116)|/reset\\-password/([^/]++)/([^/]++)(*:158)|/a(?|uthor/post/(?|edit/([^/]++)(*:198)|update/([^/]++)(*:221)|delete/([^/]++)(*:244)|tag/delete/([^/]++)/([^/]++)(*:280))|dmin/(?|reset\\-password/([^/]++)/([^/]++)(*:330)|sub\\-category/(?|edit/([^/]++)(*:368)|update/([^/]++)(*:391)|delete/([^/]++)(*:414))|post/(?|edit/([^/]++)(*:444)|update/([^/]++)(*:467)|delete/([^/]++)(*:490)|tag/delete/([^/]++)/([^/]++)(*:526))|faq/(?|edit/([^/]++)(*:555)|update/([^/]++)(*:578)|delete/([^/]++)(*:601))|author/(?|edit/([^/]++)(*:633)|update/([^/]++)(*:656)|delete/([^/]++)(*:679))|language/(?|edit/([^/]++)(*:713)|update(?|/([^/]++)(*:739)|\\-detail(?|/([^/]++)(*:767)|\\-submit/([^/]++)(*:792)))|delete/([^/]++)(*:817))|jadwal/jadwalkhutbah/(?|edit/([^/]++)(*:863)|update/([^/]++)(*:886)|delete/([^/]++)(*:909))|informasi/kas/(?|edit/([^/]++)(*:948)|update/([^/]++)(*:971)|delete/([^/]++)(*:994)))))/?$}sDu',
+      0 => '{^(?|/subcategory\\-by\\-category/([^/]++)(*:42)|/news\\-detail/([^/]++)(*:71)|/category/([^/]++)(*:96)|/tag/([^/]++)(*:116)|/reset\\-password/([^/]++)/([^/]++)(*:158)|/a(?|uthor/post/(?|edit/([^/]++)(*:198)|update/([^/]++)(*:221)|delete/([^/]++)(*:244)|tag/delete/([^/]++)/([^/]++)(*:280))|dmin/(?|reset\\-password/([^/]++)/([^/]++)(*:330)|sub\\-category/(?|edit/([^/]++)(*:368)|update/([^/]++)(*:391)|delete/([^/]++)(*:414))|post/(?|edit/([^/]++)(*:444)|update/([^/]++)(*:467)|delete/([^/]++)(*:490)|tag/delete/([^/]++)/([^/]++)(*:526))|faq/(?|edit/([^/]++)(*:555)|update/([^/]++)(*:578)|delete/([^/]++)(*:601))|author/(?|edit/([^/]++)(*:633)|update/([^/]++)(*:656)|delete/([^/]++)(*:679))|la(?|nguage/(?|edit/([^/]++)(*:716)|update(?|/([^/]++)(*:742)|\\-detail(?|/([^/]++)(*:770)|\\-submit/([^/]++)(*:795)))|delete/([^/]++)(*:820))|poran/keuangan/(?|edit/([^/]++)(*:860)|update/([^/]++)(*:883)|delete/([^/]++)(*:906)))|jadwal/jadwalkhutbah/(?|edit/([^/]++)(*:953)|update/([^/]++)(*:976)|delete/([^/]++)(*:999))|informasi/kas/(?|edit/([^/]++)(*:1038)|update/([^/]++)(*:1062)|delete/([^/]++)(*:1086)))))/?$}sDu',
     ),
     3 => 
     array (
@@ -1869,7 +1948,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      713 => 
+      716 => 
       array (
         0 => 
         array (
@@ -1892,7 +1971,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      739 => 
+      742 => 
       array (
         0 => 
         array (
@@ -1914,7 +1993,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      767 => 
+      770 => 
       array (
         0 => 
         array (
@@ -1937,7 +2016,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      792 => 
+      795 => 
       array (
         0 => 
         array (
@@ -1959,7 +2038,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      817 => 
+      820 => 
       array (
         0 => 
         array (
@@ -1982,7 +2061,75 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      863 => 
+      860 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'keuangan.edit',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      883 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'keuangan.update',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'PUT' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      906 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'keuangan.destroy',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      953 => 
       array (
         0 => 
         array (
@@ -2005,7 +2152,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      886 => 
+      976 => 
       array (
         0 => 
         array (
@@ -2027,7 +2174,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      909 => 
+      999 => 
       array (
         0 => 
         array (
@@ -2050,7 +2197,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      948 => 
+      1038 => 
       array (
         0 => 
         array (
@@ -2073,7 +2220,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      971 => 
+      1062 => 
       array (
         0 => 
         array (
@@ -2095,7 +2242,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      994 => 
+      1086 => 
       array (
         0 => 
         array (
@@ -2133,7 +2280,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::Tzyx7QgC8gEH1NL5' => 
+    'generated::E5jRaJFYUFVzU4XU' => 
     array (
       'methods' => 
       array (
@@ -2154,7 +2301,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::Tzyx7QgC8gEH1NL5',
+        'as' => 'generated::E5jRaJFYUFVzU4XU',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2279,7 +2426,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::y3Y8YarvaMq6zuW4' => 
+    'generated::bcEqlOPQisPoMWfX' => 
     array (
       'methods' => 
       array (
@@ -2296,13 +2443,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:47:"Laravel\\SerializableClosure\\SerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Signed":2:{s:12:"serializable";s:297:"O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:79:"function (\\Illuminate\\Http\\Request $request) {
     return $request->user();
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000537970f10000000066b65bd2";}";s:4:"hash";s:44:"eKmpC5qEs76/99SfqbD7gjSnqfRStLnBwIK/UTbOjIc=";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000007390000000000000000";}";s:4:"hash";s:44:"kOrcsLp68gKYKtFoi90PFpHqy/TaVfBGRH9g0d2p77M=";}}',
         'namespace' => NULL,
         'prefix' => 'api',
         'where' => 
         array (
         ),
-        'as' => 'generated::y3Y8YarvaMq6zuW4',
+        'as' => 'generated::bcEqlOPQisPoMWfX',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5869,6 +6016,269 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'admin_kas_delete',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'keuangan.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/laporan/keuangan',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin:admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@index',
+        'controller' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'keuangan.index',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'keuangan.store' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'admin/laporan/keuangan/store',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@store',
+        'controller' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@store',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'keuangan.store',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'keuangan.create' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/laporan/keuangan/create',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin:admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@create',
+        'controller' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@create',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'keuangan.create',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'keuangan.show' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/laporan/keuangan/show',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin:admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@show',
+        'controller' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@show',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'keuangan.show',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'keuangan.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/laporan/keuangan/edit/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin:admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@edit',
+        'controller' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@edit',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'keuangan.edit',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'keuangan.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'PUT',
+      ),
+      'uri' => 'admin/laporan/keuangan/update/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin:admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@update',
+        'controller' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@update',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'keuangan.update',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'keuangan.destroy' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'admin/laporan/keuangan/delete/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+          1 => 'admin:admin',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@delete',
+        'controller' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@delete',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'keuangan.destroy',
       ),
       'fallback' => false,
       'defaults' => 

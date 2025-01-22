@@ -23,7 +23,7 @@
                                     <th>Category</th>
                                     <th>Author</th>
                                     <th>Admin</th>
-                                    <th>Action</th>
+                                    <th style="width:15%;">Action</th>
                                 </tr>
                             </thead>
                             <tbody>
