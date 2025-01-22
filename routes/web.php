@@ -153,7 +153,7 @@ Route::get('/admin/informasi/kas/delete/{id}', [AdminInformasiController::class,
 
 Route::get('/admin/laporan/keuangan', [AdminLaporanKeuanganController::class, 'index'])->name('lapkeu.index')->middleware('admin:admin');
 Route::get('/admin/laporan/keuangan/create', [AdminLaporanKeuanganController::class, 'create'])->name('lapkeu.create')->middleware('admin:admin');
-Route::post('/admin/laporan/keuangan/store', [AdminLaporanKeuanganController::class, 'store'])->name('lapkeu.store');
+Route::post('/admin/laporan/keuangan/store', [AdminLaporanKeuanganController::class, 'store'])->name('lapkeu.store')->middleware('admin:admin');
 Route::get('/admin/laporan/keuangan/edit/{id}', [AdminLaporanKeuanganController::class, 'edit'])->name('lapkeu.edit')->middleware('admin:admin');
 Route::put('/admin/laporan/keuangan/update/{id}', [AdminLaporanKeuanganController::class, 'update'])->name('lapkeu.update')->middleware('admin:admin');
 Route::get('/admin/laporan/keuangan/delete/{id}', [AdminLaporanKeuanganController::class, 'delete'])->name('lapkeu.destroy')->middleware('admin:admin');
