@@ -151,10 +151,10 @@ Route::get('/admin/informasi/kas/edit/{id}', [AdminInformasiController::class, '
 Route::put('/admin/informasi/kas/update/{id}', [AdminInformasiController::class, 'update'])->name('admin_kas_update')->middleware('admin:admin');
 Route::get('/admin/informasi/kas/delete/{id}', [AdminInformasiController::class, 'delete'])->name('admin_kas_delete')->middleware('admin:admin');
 
-Route::get('/admin/laporan/keuangan', [AdminLaporanKeuanganController::class, 'index'])->name('keuangan.index')->middleware('admin:admin');
-Route::get('/admin/laporan/keuangan/create', [AdminLaporanKeuanganController::class, 'create'])->name('keuangan.create')->middleware('admin:admin');
-Route::post('/admin/laporan/keuangan/store', [AdminLaporanKeuanganController::class, 'store'])->name('keuangan.store');
-Route::get('/admin/laporan/keuangan/edit/{id}', [AdminLaporanKeuanganController::class, 'edit'])->name('keuangan.edit')->middleware('admin:admin');
-Route::put('/admin/laporan/keuangan/update/{id}', [AdminLaporanKeuanganController::class, 'update'])->name('keuangan.update')->middleware('admin:admin');
-Route::get('/admin/laporan/keuangan/delete/{id}', [AdminLaporanKeuanganController::class, 'delete'])->name('keuangan.destroy')->middleware('admin:admin');
+Route::get('/admin/laporan/keuangan', [AdminLaporanKeuanganController::class, 'index'])->name('lapkeu.index')->middleware('admin:admin');
+Route::get('/admin/laporan/keuangan/create', [AdminLaporanKeuanganController::class, 'create'])->name('lapkeu.create')->middleware('admin:admin');
+Route::post('/admin/laporan/keuangan/store', [AdminLaporanKeuanganController::class, 'store'])->name('lapkeu.store');
+Route::get('/admin/laporan/keuangan/edit/{id}', [AdminLaporanKeuanganController::class, 'edit'])->name('lapkeu.edit')->middleware('admin:admin');
+Route::put('/admin/laporan/keuangan/update/{id}', [AdminLaporanKeuanganController::class, 'update'])->name('lapkeu.update')->middleware('admin:admin');
+Route::get('/admin/laporan/keuangan/delete/{id}', [AdminLaporanKeuanganController::class, 'delete'])->name('lapkeu.destroy')->middleware('admin:admin');
 

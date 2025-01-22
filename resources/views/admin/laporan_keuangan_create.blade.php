@@ -3,12 +3,12 @@
 @section('heading', 'Tambah Laporan Keuangan')
 
 @section('button')
-<a href="{{ route('keuangan.index') }}" class="btn btn-primary"><i class="fas fa-eye"></i> View</a>
+<a href="{{ route('lapkeu.index') }}" class="btn btn-primary"><i class="fas fa-eye"></i> View</a>
 @endsection
 
 @section('main_content')
 <div class="section-body">
-    <form action="{{ route('keuangan.store') }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('lapkeu.store') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="row">
             <div class="col-12">

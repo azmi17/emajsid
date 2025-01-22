@@ -8,7 +8,6 @@
         </div>
 
         <ul class="sidebar-menu">
-
             <li class="{{ Request::is('admin/home') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_home') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Dashboard"><i class="fas fa-home"></i> <span>Dashboard</span></a></li>
 
             <li class="{{ Request::is('admin/setting') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_setting') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Setting"><i class="fas fa-cog"></i> <span>Setting</span></a></li>
@@ -37,7 +36,7 @@
                     <li class="{{ Request::is('admin/jadwal/jadwalkhutbah*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_jadwal_khutbah_show') }}"><i class="fas fa-angle-right"></i> Jadwal Khutbah</a></li>
                 </ul>
             </li>
-            
+
             <li class="nav-item dropdown {{ Request::is('admin/informasi/kas*') ? 'active' : '' }}">
                 <a href="#" class="nav-link has-dropdown"><i class="fa fa-users"></i><span>Informasi Masjid</span></a>
                 <ul class="dropdown-menu">
@@ -45,9 +44,11 @@
                 </ul>
             </li>
 
+            <li class="{{ Request::is('/admin/laporan/keuangan') ? 'active' : '' }}"><a class="nav-link" href="{{ route('lapkeu.index') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Laporan Keuangan"><i class="fas fa-money-bill"></i> <span>Laporan Keuangan</span></a></li>
+
             <li class="{{ Request::is('admin/faq/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_faq_show') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="FAQ Section"><i class="fas fa-question-circle"></i> <span>FAQ Section</span></a></li>
 
-            <li class="{{ Request::is('admin/language/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_language_show') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Languages"><i class="fas fa-language"></i> <span>Languages</span></a></li>        
+            <li class="{{ Request::is('admin/language/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_language_show') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Languages"><i class="fas fa-language"></i> <span>Languages</span></a></li>
         </ul>
     </aside>
 </div>

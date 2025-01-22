@@ -3,12 +3,12 @@
 @section('heading', 'Edit Laporan Keuangan')
 
 @section('button')
-<a href="{{ route('keuangan.index') }}" class="btn btn-primary"><i class="fas fa-eye"></i> View</a>
+<a href="{{ route('lapkeu.index') }}" class="btn btn-primary"><i class="fas fa-eye"></i> View</a>
 @endsection
 
 @section('main_content')
 <div class="section-body">
-    <form action="{{ route('keuangan.update', $keuangan->id) }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('lapkeu.update', $lapkeu->id) }}" method="post" enctype="multipart/form-data">
         @csrf
         @method('PUT')
         <div class="row">
@@ -20,7 +20,7 @@
                             <label for="tahun" class="form-label">Tahun</label>
                             <select name="tahun" id="tahun" class="form-control">
                                 @for($i = date('Y'); $i >= 2000; $i--)
-                                    <option value="{{ $i }}" {{ $keuangan->tahun == $i ? 'selected' : '' }}>{{ $i }}</option>
+                                    <option value="{{ $i }}" {{ $lapkeu->tahun == $i ? 'selected' : '' }}>{{ $i }}</option>
                                 @endfor
                             </select>
                         </div>
@@ -29,14 +29,14 @@
                             <label for="bulan" class="form-label">Bulan</label>
                             <select name="bulan" id="bulan" class="form-control">
                                 @foreach(['Januari', 'Februari', 'Maret', 'April', 'Mei', 'Juni', 'Juli', 'Agustus', 'September', 'Oktober', 'November', 'Desember'] as $bulan)
-                                    <option value="{{ $bulan }}" {{ $keuangan->bulan == $bulan ? 'selected' : '' }}>{{ $bulan }}</option>
+                                    <option value="{{ $bulan }}" {{ $lapkeu->bulan == $bulan ? 'selected' : '' }}>{{ $bulan }}</option>
                                 @endforeach
                             </select>
                         </div>
 
                         <div class="form-group mb-3">
                             <label for="deskripsi" class="form-label">Deskripsi</label>
-                            <input type="text" name="deskripsi" id="deskripsi" class="form-control" value="{{ $keuangan->deskripsi }}">
+                            <input type="text" name="deskripsi" id="deskripsi" class="form-control" value="{{ $lapkeu->deskripsi }}">
                         </div>
 
                         <div class="form-group mb-3">

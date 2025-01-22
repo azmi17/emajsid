@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::E5jRaJFYUFVzU4XU',
+            '_route' => 'generated::nX4ckOmfhRfvI0Rq',
           ),
           1 => NULL,
           2 => 
@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::bcEqlOPQisPoMWfX',
+            '_route' => 'generated::canJlQ6LWh0ltCAK',
           ),
           1 => NULL,
           2 => 
@@ -1340,7 +1340,27 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'keuangan.index',
+            '_route' => 'lapkeu.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/admin/laporan/keuangan/create' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'lapkeu.create',
           ),
           1 => NULL,
           2 => 
@@ -1360,52 +1380,12 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'keuangan.store',
+            '_route' => 'lapkeu.store',
           ),
           1 => NULL,
           2 => 
           array (
             'POST' => 0,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/laporan/keuangan/create' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'keuangan.create',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
-          ),
-          3 => NULL,
-          4 => false,
-          5 => false,
-          6 => NULL,
-        ),
-      ),
-      '/admin/laporan/keuangan/show' => 
-      array (
-        0 => 
-        array (
-          0 => 
-          array (
-            '_route' => 'keuangan.show',
-          ),
-          1 => NULL,
-          2 => 
-          array (
-            'GET' => 0,
-            'HEAD' => 1,
           ),
           3 => NULL,
           4 => false,
@@ -2067,7 +2047,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'keuangan.edit',
+            '_route' => 'lapkeu.edit',
           ),
           1 => 
           array (
@@ -2090,7 +2070,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'keuangan.update',
+            '_route' => 'lapkeu.update',
           ),
           1 => 
           array (
@@ -2112,7 +2092,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'keuangan.destroy',
+            '_route' => 'lapkeu.destroy',
           ),
           1 => 
           array (
@@ -2280,7 +2260,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::E5jRaJFYUFVzU4XU' => 
+    'generated::nX4ckOmfhRfvI0Rq' => 
     array (
       'methods' => 
       array (
@@ -2301,7 +2281,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::E5jRaJFYUFVzU4XU',
+        'as' => 'generated::nX4ckOmfhRfvI0Rq',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2426,7 +2406,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::bcEqlOPQisPoMWfX' => 
+    'generated::canJlQ6LWh0ltCAK' => 
     array (
       'methods' => 
       array (
@@ -2449,7 +2429,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::bcEqlOPQisPoMWfX',
+        'as' => 'generated::canJlQ6LWh0ltCAK',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6031,7 +6011,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'keuangan.index' => 
+    'lapkeu.index' => 
     array (
       'methods' => 
       array (
@@ -6053,7 +6033,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'keuangan.index',
+        'as' => 'lapkeu.index',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6069,43 +6049,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'keuangan.store' => 
-    array (
-      'methods' => 
-      array (
-        0 => 'POST',
-      ),
-      'uri' => 'admin/laporan/keuangan/store',
-      'action' => 
-      array (
-        'middleware' => 
-        array (
-          0 => 'web',
-        ),
-        'uses' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@store',
-        'controller' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@store',
-        'namespace' => NULL,
-        'prefix' => '',
-        'where' => 
-        array (
-        ),
-        'as' => 'keuangan.store',
-      ),
-      'fallback' => false,
-      'defaults' => 
-      array (
-      ),
-      'wheres' => 
-      array (
-      ),
-      'bindingFields' => 
-      array (
-      ),
-      'lockSeconds' => NULL,
-      'waitSeconds' => NULL,
-      'withTrashed' => false,
-    ),
-    'keuangan.create' => 
+    'lapkeu.create' => 
     array (
       'methods' => 
       array (
@@ -6127,7 +6071,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'keuangan.create',
+        'as' => 'lapkeu.create',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6143,29 +6087,27 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'keuangan.show' => 
+    'lapkeu.store' => 
     array (
       'methods' => 
       array (
-        0 => 'GET',
-        1 => 'HEAD',
+        0 => 'POST',
       ),
-      'uri' => 'admin/laporan/keuangan/show',
+      'uri' => 'admin/laporan/keuangan/store',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
-          1 => 'admin:admin',
         ),
-        'uses' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@show',
-        'controller' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@show',
+        'uses' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@store',
+        'controller' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@store',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'keuangan.show',
+        'as' => 'lapkeu.store',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6181,7 +6123,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'keuangan.edit' => 
+    'lapkeu.edit' => 
     array (
       'methods' => 
       array (
@@ -6203,7 +6145,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'keuangan.edit',
+        'as' => 'lapkeu.edit',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6219,7 +6161,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'keuangan.update' => 
+    'lapkeu.update' => 
     array (
       'methods' => 
       array (
@@ -6240,7 +6182,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'keuangan.update',
+        'as' => 'lapkeu.update',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6256,7 +6198,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'keuangan.destroy' => 
+    'lapkeu.destroy' => 
     array (
       'methods' => 
       array (
@@ -6278,7 +6220,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'keuangan.destroy',
+        'as' => 'lapkeu.destroy',
       ),
       'fallback' => false,
       'defaults' => 

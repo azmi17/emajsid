@@ -61,7 +61,7 @@ class AdminLaporanKeuanganController extends Controller
             'file_path' => $filePath,
         ]);
 
-        return redirect()->route('keuangan.index')->with('success', 'Data is added successfully');
+        return redirect()->route('lapkeu.index')->with('success', 'Data is added successfully');
     }
 
     /**
@@ -72,11 +72,11 @@ class AdminLaporanKeuanganController extends Controller
      */
     public function edit($id)
     {
-        $keuangan = LaporanKeuangan::where('id', $id)
+        $lapkeu = LaporanKeuangan::where('id', $id)
             ->where('admin_id', Auth::guard('admin')->user()->id)
             ->firstOrFail();
 
-        return view('admin.laporan_keuangan_edit', compact('keuangan'));
+        return view('admin.laporan_keuangan_edit', compact('lapkeu'));
     }
 
     /**
@@ -88,7 +88,7 @@ class AdminLaporanKeuanganController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $keuangan = LaporanKeuangan::findOrFail($id);
+        $lapkeu = LaporanKeuangan::findOrFail($id);
 
         $request->validate([
             'tahun' => 'required|string',
@@ -97,18 +97,18 @@ class AdminLaporanKeuanganController extends Controller
             'file_path' => 'required|file|mimes:pdf,doc,docx|max:2048',
         ]);
 
-        $filePath = $keuangan->file_path;
+        $filePath = $lapkeu->file_path;
 
         if ($request->hasFile('file_path')) {
             $originalName = $request->file('file_path')->getClientOriginalName();
             $fileName = date('d-m-Y') . '-' . $originalName;
 
-            Storage::disk('public')->delete($keuangan->file_path);
+            Storage::disk('public')->delete($lapkeu->file_path);
 
             $filePath = $request->file('file_path')->storeAs('documents', $fileName, 'public');
         }
 
-        $keuangan->update([
+        $lapkeu->update([
             'tahun' => $request->tahun,
             'bulan' => $request->bulan,
             'deskripsi' => $request->deskripsi,
@@ -116,7 +116,7 @@ class AdminLaporanKeuanganController extends Controller
             'file_path' => $filePath,
         ]);
 
-        return redirect()->route('keuangan.index')->with('success', 'Data updated successfully.');
+        return redirect()->route('lapkeu.index')->with('success', 'Data updated successfully.');
     }
 
     /**
@@ -127,16 +127,16 @@ class AdminLaporanKeuanganController extends Controller
      */
     public function delete($id)
     {
-        $keuangan = LaporanKeuangan::where('id', $id)
+        $lapkeu = LaporanKeuangan::where('id', $id)
             ->where('admin_id', Auth::guard('admin')->user()->id)
             ->firstOrFail();
 
-        if ($keuangan->file_path) {
-            Storage::disk('public')->delete($keuangan->file_path);
+        if ($lapkeu->file_path) {
+            Storage::disk('public')->delete($lapkeu->file_path);
         }
 
-        $keuangan->delete();
+        $lapkeu->delete();
 
-        return redirect()->route('keuangan.index')->with('success', 'Data deleted successfully.');
+        return redirect()->route('lapkeu.index')->with('success', 'Data deleted successfully.');
     }
 }
