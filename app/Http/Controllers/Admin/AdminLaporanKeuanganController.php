@@ -17,7 +17,8 @@ class AdminLaporanKeuanganController extends Controller
      */
     public function index()
     {
-        $datas = LaporanKeuangan::all();
+        // $datas = LaporanKeuangan::all();
+        $datas = LaporanKeuangan::where('admin_id', Auth::guard('admin')->user()->id)->get();
         return view('admin.laporan_keuangan_index', compact('datas'));
     }
 
@@ -43,7 +44,7 @@ class AdminLaporanKeuanganController extends Controller
             'tahun' => 'required|string',
             'bulan' => 'required|string',
             'deskripsi' => 'required|string',
-            'file_path' => 'required|file|mimes:pdf,doc,docx|max:2048',
+            'file_path' => 'nullable|file|mimes:pdf,doc,docx|max:2048',
         ]);
 
         $filePath = null;
@@ -94,7 +95,7 @@ class AdminLaporanKeuanganController extends Controller
             'tahun' => 'required|string',
             'bulan' => 'required|string',
             'deskripsi' => 'required|string',
-            'file_path' => 'required|file|mimes:pdf,doc,docx|max:2048',
+            'file_path' => 'nullable|file|mimes:pdf,doc,docx|max:2048',
         ]);
 
         $filePath = $lapkeu->file_path;

@@ -71,7 +71,7 @@ $current_language_id = \App\Models\Language::where('short_name',$current_short_n
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">Laporan Keuangan</a>
+                                <a class="nav-link active" aria-current="page" href="{{ route('laporan_keuangan.index') }}">Laporan Keuangan</a>
                             </li>
                         </ul>
                     </div>

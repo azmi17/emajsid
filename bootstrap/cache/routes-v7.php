@@ -24,7 +24,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::nX4ckOmfhRfvI0Rq',
+            '_route' => 'generated::nKWMdBJCWcHAkSEa',
           ),
           1 => NULL,
           2 => 
@@ -102,7 +102,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::canJlQ6LWh0ltCAK',
+            '_route' => 'generated::xTswiMTC3zllL5DS',
           ),
           1 => NULL,
           2 => 
@@ -464,6 +464,26 @@ app('router')->setCompiledRoutes(
           2 => 
           array (
             'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/laporan-keuangan' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'laporan_keuangan.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
           ),
           3 => NULL,
           4 => false,
@@ -1396,7 +1416,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/subcategory\\-by\\-category/([^/]++)(*:42)|/news\\-detail/([^/]++)(*:71)|/category/([^/]++)(*:96)|/tag/([^/]++)(*:116)|/reset\\-password/([^/]++)/([^/]++)(*:158)|/a(?|uthor/post/(?|edit/([^/]++)(*:198)|update/([^/]++)(*:221)|delete/([^/]++)(*:244)|tag/delete/([^/]++)/([^/]++)(*:280))|dmin/(?|reset\\-password/([^/]++)/([^/]++)(*:330)|sub\\-category/(?|edit/([^/]++)(*:368)|update/([^/]++)(*:391)|delete/([^/]++)(*:414))|post/(?|edit/([^/]++)(*:444)|update/([^/]++)(*:467)|delete/([^/]++)(*:490)|tag/delete/([^/]++)/([^/]++)(*:526))|faq/(?|edit/([^/]++)(*:555)|update/([^/]++)(*:578)|delete/([^/]++)(*:601))|author/(?|edit/([^/]++)(*:633)|update/([^/]++)(*:656)|delete/([^/]++)(*:679))|la(?|nguage/(?|edit/([^/]++)(*:716)|update(?|/([^/]++)(*:742)|\\-detail(?|/([^/]++)(*:770)|\\-submit/([^/]++)(*:795)))|delete/([^/]++)(*:820))|poran/keuangan/(?|edit/([^/]++)(*:860)|update/([^/]++)(*:883)|delete/([^/]++)(*:906)))|jadwal/jadwalkhutbah/(?|edit/([^/]++)(*:953)|update/([^/]++)(*:976)|delete/([^/]++)(*:999))|informasi/kas/(?|edit/([^/]++)(*:1038)|update/([^/]++)(*:1062)|delete/([^/]++)(*:1086)))))/?$}sDu',
+      0 => '{^(?|/subcategory\\-by\\-category/([^/]++)(*:42)|/news\\-detail/([^/]++)(*:71)|/category/([^/]++)(*:96)|/tag/([^/]++)(*:116)|/reset\\-password/([^/]++)/([^/]++)(*:158)|/laporan\\-keuangan/([^/]++)/download(*:202)|/a(?|uthor/post/(?|edit/([^/]++)(*:242)|update/([^/]++)(*:265)|delete/([^/]++)(*:288)|tag/delete/([^/]++)/([^/]++)(*:324))|dmin/(?|reset\\-password/([^/]++)/([^/]++)(*:374)|sub\\-category/(?|edit/([^/]++)(*:412)|update/([^/]++)(*:435)|delete/([^/]++)(*:458))|post/(?|edit/([^/]++)(*:488)|update/([^/]++)(*:511)|delete/([^/]++)(*:534)|tag/delete/([^/]++)/([^/]++)(*:570))|faq/(?|edit/([^/]++)(*:599)|update/([^/]++)(*:622)|delete/([^/]++)(*:645))|author/(?|edit/([^/]++)(*:677)|update/([^/]++)(*:700)|delete/([^/]++)(*:723))|la(?|nguage/(?|edit/([^/]++)(*:760)|update(?|/([^/]++)(*:786)|\\-detail(?|/([^/]++)(*:814)|\\-submit/([^/]++)(*:839)))|delete/([^/]++)(*:864))|poran/keuangan/(?|edit/([^/]++)(*:904)|update/([^/]++)(*:927)|delete/([^/]++)(*:950)))|jadwal/jadwalkhutbah/(?|edit/([^/]++)(*:997)|update/([^/]++)(*:1020)|delete/([^/]++)(*:1044))|informasi/kas/(?|edit/([^/]++)(*:1084)|update/([^/]++)(*:1108)|delete/([^/]++)(*:1132)))))/?$}sDu',
     ),
     3 => 
     array (
@@ -1516,7 +1536,30 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      198 => 
+      202 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'laporan_keuangan.download',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      242 => 
       array (
         0 => 
         array (
@@ -1539,7 +1582,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      221 => 
+      265 => 
       array (
         0 => 
         array (
@@ -1561,7 +1604,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      244 => 
+      288 => 
       array (
         0 => 
         array (
@@ -1584,7 +1627,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      280 => 
+      324 => 
       array (
         0 => 
         array (
@@ -1608,7 +1651,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      330 => 
+      374 => 
       array (
         0 => 
         array (
@@ -1632,7 +1675,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      368 => 
+      412 => 
       array (
         0 => 
         array (
@@ -1655,7 +1698,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      391 => 
+      435 => 
       array (
         0 => 
         array (
@@ -1677,7 +1720,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      414 => 
+      458 => 
       array (
         0 => 
         array (
@@ -1700,7 +1743,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      444 => 
+      488 => 
       array (
         0 => 
         array (
@@ -1723,7 +1766,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      467 => 
+      511 => 
       array (
         0 => 
         array (
@@ -1745,7 +1788,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      490 => 
+      534 => 
       array (
         0 => 
         array (
@@ -1768,7 +1811,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      526 => 
+      570 => 
       array (
         0 => 
         array (
@@ -1792,7 +1835,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      555 => 
+      599 => 
       array (
         0 => 
         array (
@@ -1815,7 +1858,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      578 => 
+      622 => 
       array (
         0 => 
         array (
@@ -1837,7 +1880,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      601 => 
+      645 => 
       array (
         0 => 
         array (
@@ -1860,7 +1903,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      633 => 
+      677 => 
       array (
         0 => 
         array (
@@ -1883,7 +1926,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      656 => 
+      700 => 
       array (
         0 => 
         array (
@@ -1905,7 +1948,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      679 => 
+      723 => 
       array (
         0 => 
         array (
@@ -1928,7 +1971,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      716 => 
+      760 => 
       array (
         0 => 
         array (
@@ -1951,7 +1994,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      742 => 
+      786 => 
       array (
         0 => 
         array (
@@ -1973,7 +2016,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      770 => 
+      814 => 
       array (
         0 => 
         array (
@@ -1996,7 +2039,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      795 => 
+      839 => 
       array (
         0 => 
         array (
@@ -2018,7 +2061,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      820 => 
+      864 => 
       array (
         0 => 
         array (
@@ -2041,7 +2084,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      860 => 
+      904 => 
       array (
         0 => 
         array (
@@ -2064,7 +2107,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      883 => 
+      927 => 
       array (
         0 => 
         array (
@@ -2086,7 +2129,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      906 => 
+      950 => 
       array (
         0 => 
         array (
@@ -2109,7 +2152,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      953 => 
+      997 => 
       array (
         0 => 
         array (
@@ -2132,7 +2175,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      976 => 
+      1020 => 
       array (
         0 => 
         array (
@@ -2154,7 +2197,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      999 => 
+      1044 => 
       array (
         0 => 
         array (
@@ -2177,7 +2220,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1038 => 
+      1084 => 
       array (
         0 => 
         array (
@@ -2200,7 +2243,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1062 => 
+      1108 => 
       array (
         0 => 
         array (
@@ -2222,7 +2265,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1086 => 
+      1132 => 
       array (
         0 => 
         array (
@@ -2260,7 +2303,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::nX4ckOmfhRfvI0Rq' => 
+    'generated::nKWMdBJCWcHAkSEa' => 
     array (
       'methods' => 
       array (
@@ -2281,7 +2324,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 'web',
         ),
-        'as' => 'generated::nX4ckOmfhRfvI0Rq',
+        'as' => 'generated::nKWMdBJCWcHAkSEa',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2406,7 +2449,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::canJlQ6LWh0ltCAK' => 
+    'generated::xTswiMTC3zllL5DS' => 
     array (
       'methods' => 
       array (
@@ -2429,7 +2472,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::canJlQ6LWh0ltCAK',
+        'as' => 'generated::xTswiMTC3zllL5DS',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3276,6 +3319,80 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'reset_password_submit',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'laporan_keuangan.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'laporan-keuangan',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Front\\LaporanKeuanganController@index',
+        'controller' => 'App\\Http\\Controllers\\Front\\LaporanKeuanganController@index',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'laporan_keuangan.index',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'laporan_keuangan.download' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'laporan-keuangan/{id}/download',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Front\\LaporanKeuanganController@download',
+        'controller' => 'App\\Http\\Controllers\\Front\\LaporanKeuanganController@download',
+        'namespace' => NULL,
+        'prefix' => '',
+        'where' => 
+        array (
+        ),
+        'as' => 'laporan_keuangan.download',
       ),
       'fallback' => false,
       'defaults' => 
@@ -6099,6 +6216,7 @@ app('router')->setCompiledRoutes(
         'middleware' => 
         array (
           0 => 'web',
+          1 => 'admin:admin',
         ),
         'uses' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@store',
         'controller' => 'App\\Http\\Controllers\\Admin\\AdminLaporanKeuanganController@store',

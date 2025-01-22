@@ -19,7 +19,7 @@ return new class extends Migration
             $table->string('bulan');
             $table->string('deskripsi');
             $table->foreignId('admin_id')->constrained()->cascadeOnDelete();
-            $table->string('file_path');
+            $table->string('file_path')->nullable();
             $table->timestamps();
         });
     }

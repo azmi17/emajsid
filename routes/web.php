@@ -13,11 +13,11 @@ use App\Http\Controllers\Front\PengurusController;
 use App\Http\Controllers\Front\KhutbahController;
 use App\Http\Controllers\Front\InformasiController;
 use App\Http\Controllers\Front\KalkulatorController;
+use App\Http\Controllers\Front\LaporanKeuanganController;
 
 use App\Http\Controllers\Admin\AdminHomeController;
 use App\Http\Controllers\Admin\AdminLoginController;
 use App\Http\Controllers\Admin\AdminProfileController;
-use App\Http\Controllers\Admin\AdminCategoryController;
 use App\Http\Controllers\Admin\AdminSubCategoryController;
 use App\Http\Controllers\Admin\AdminPostController;
 use App\Http\Controllers\Admin\AdminSettingController;
@@ -49,7 +49,6 @@ Route::get('/kalkulator/zakatPenghasilan', [KalkulatorController::class, 'zakatP
 Route::get('/kalkulator/zakatMal', [KalkulatorController::class, 'zakatMal'])->name('zakat_mal');
 Route::get('/kalkulator/zakatFitrah', [KalkulatorController::class, 'zakatFitrah'])->name('zakat_fitrah');
 Route::get('/jadwalshalat', [SubCategoryController::class, 'jadwalshalat'])->name('jadwalshalat');
-
 Route::get('/tag/{tag_name}', [TagController::class, 'show'])->name('tag_posts_show');
 Route::get('/login', [LoginController::class, 'index'])->name('login');
 Route::post('/login-submit', [LoginController::class, 'login_submit'])->name('login_submit');
@@ -58,6 +57,8 @@ Route::get('/forget-password', [LoginController::class, 'forget_password'])->nam
 Route::post('/forget-password-submit', [LoginController::class, 'forget_password_submit'])->name('forget_password_submit');
 Route::get('/reset-password/{token}/{email}', [LoginController::class, 'reset_password'])->name('reset_password');
 Route::post('/reset-password-submit', [LoginController::class, 'reset_password_submit'])->name('reset_password_submit');
+Route::get('/laporan-keuangan', [LaporanKeuanganController::class, 'index'])->name('laporan_keuangan.index');
+Route::get('/laporan-keuangan/{id}/download', [LaporanKeuanganController::class, 'download'])->name('laporan_keuangan.download');
 
 /* Author */
 Route::get('/author/home', [AuthorHomeController::class, 'index'])->name('author_home')->middleware('author:author');
