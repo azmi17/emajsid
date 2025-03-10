@@ -45,13 +45,13 @@ class AdminAuthorController extends Controller
             $request->file('photo')->move(public_path('uploads/'),$final_name);
             $author->photo = $final_name;
         }
-        
+
         $author->name = $request->name;
         $author->email = $request->email;
         $author->password = Hash::make($request->password);
         $author->token = '';
         $author->save();
-        
+
         return redirect()->route('admin_author_show')->with('success', 'Author account is created successfully.');
     }
 
@@ -61,7 +61,7 @@ class AdminAuthorController extends Controller
         return view('admin.author_edit', compact('author_data'));
     }
 
-    public function update(Request $request,$id) 
+    public function update(Request $request,$id)
     {
         $author = Author::where('id',$id)->first();
 
@@ -95,7 +95,7 @@ class AdminAuthorController extends Controller
             $request->file('photo')->move(public_path('uploads/'),$final_name);
             $author->photo = $final_name;
         }
-        
+
         $author->name = $request->name;
         $author->email = $request->email;
         $author->update();
