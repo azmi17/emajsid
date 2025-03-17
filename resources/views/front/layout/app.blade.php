@@ -107,6 +107,89 @@
                 color: #fff!important;
             }
 
+            .image-container {
+                position: relative;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .image-container img {
+                width: 100%;f
+                filter: blur(1px); /* Efek blur pada gambar */
+            }
+
+            .image-sldr {
+                position: relative;
+                width: 100%;
+                max-width: 1200px; /* Sesuaikan dengan ukuran slider */
+                height: 400px; /* Sesuaikan tinggi slider */
+                margin: auto;
+                overflow: hidden;
+            }
+
+            .image-sldr img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                filter: blur(3px); /* Efek blur pada gambar */
+            }
+
+            .overlay-text-dana {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                background: rgba(0, 0, 0, 0.5);
+                color: white;
+                padding: 10px 20px;
+                border-radius: 5px;
+                font-weight: bold;
+                text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            }
+
+            .cards-overlay {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                width: 80%; /* Sesuaikan dengan kebutuhan */
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .cards-overlay .row {
+                width: 100%;
+            }
+
+            .card {
+                background: rgba(255, 255, 255, 0.9); /* Transparansi untuk menonjolkan card */
+                box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+            }
+
+            .overlay-text {
+                position: absolute;
+                top: 20%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                font-size: 2.5rem;
+                color: white;
+                font-weight: bold;
+                text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
+            }
+
+            .map-container {
+                max-width: 800px;  /* Maksimal lebar */
+                margin: 0 auto;    /* Agar center */
+            }
+
+           /* Make the image fully responsive */
+            .carousel-inner img {
+                width: 100%;
+                height: 100%;
+            }
         </style>
 
     </head>

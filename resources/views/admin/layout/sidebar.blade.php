@@ -44,7 +44,7 @@
                 </ul>
             </li>
 
-            <li class="{{ Request::is('/admin/laporan/keuangan') ? 'active' : '' }}"><a class="nav-link" href="{{ route('lapkeu.index') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Laporan Keuangan"><i class="fas fa-money-bill"></i> <span>Laporan Keuangan</span></a></li>
+            <li class="{{ Request::is('/admin/laporan/keuangan') ? 'active' : '' }}"><a class="nav-link" href="{{ route('lapkeu.index') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="Transparansi Dana"><i class="fas fa-money-bill"></i> <span>Transparansi Dana</span></a></li>
 
             <li class="{{ Request::is('admin/faq/*') ? 'active' : '' }}"><a class="nav-link" href="{{ route('admin_faq_show') }}" data-bs-toggle="tooltip" data-bs-placement="right" data-bs-title="FAQ Section"><i class="fas fa-question-circle"></i> <span>FAQ Section</span></a></li>
 

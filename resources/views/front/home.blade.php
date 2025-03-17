@@ -29,9 +29,135 @@
 
 <div class="home-main">
     <div class="container">
-        <div class="row g-2">
-            <div class="col-lg-8 col-md-12 left">
 
+        {{-- HEADER MASJID --}}
+        <div class="image-container">
+            <img src="{{ asset('uploads/'.'masjid-at-thoat.jpg') }}" alt="Masjid">
+
+            <!-- Teks di atas gambar -->
+            <div class="overlay-text">
+                <h1 class="text-center">Masjid At-Thoat Jatisampurna</h1>
+                <h4 class="text-center">~Dari Masjid Membangun Ummat~</h4>
+            </div>
+
+
+            {{-- Card di atas gambar --}}
+            <div class="cards-overlay">
+                <div class="row">
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h2><i class="fa fa-home fa"></i></h2>
+                                <h5 class="card-title">Tentang Kami</h5>
+                                <p class="card-text">Berawal dari sebuah langgar kecil di Jatisampurna, Bekasi perumahan Grand Mutiara 1, Masjid At-Thoat terus berusaha membangun Ummat dan Mensejahterakan Masyarakat Sekitarnya.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h2><i class="fa fa-database"></i></h2>
+                                <h5 class="card-title">Manajemen Masjid</h5>
+                                <p class="card-text">Masjid At-Thoat berusaha menerapkan manajemen masjid zaman rasulullah dengan aplikasi di zaman modern dan dengan inovatif sehingga bisa diterima oleh masyarakat.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12">
+                        <div class="card">
+                            <div class="card-body text-center">
+                                <h2><i class="fa fa-life-ring"></i></h2>
+                                <h5 class="card-title">Support</h5>
+                                <p class="card-text">Support dakwah kami dengan sedekah, infaq, zakat dan wakaf di Masjid At-Thoat​. Semoga Allah selalu melimpahkan barokah dan rezeki kepada Anda sekeluarga di rumah</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        {{-- PROFIL MASJID --}}
+        <div class="row g-2">
+            <div class="col-lg-12 col-md-12 text-center p-3">
+                <h1 class="">Profil Masjid At-Thoat</h1>
+                <div class="alert alert-light" role="alert">
+                    <p>Sejarah Masjid At-Tho'at pertama kali dibangun saat perumahan Grand Mutiara 1 dibangun, yaitu sekitar 10 tahun yang lalu atau tepatnya ditahun 2013. Pada waktu itu, masjid At-Tho'at hanyalah berupa musholla kecil yang dibangun untuk peribadatan umat islam warga perumahan. namun, seiring perkembangan perumahan dan meningkatnya jamaah musholla, pengurus musholla saat itu memutuskan merenovasi musholla sekaligus mengubahnya menjadi masjid dengan meminta donasi kepada donatur perumahan dan juga warga agar ikut menyumbang dalam pembangunan masjid di tahun 2017. setelah setahun berjalan, pada 2018, masjid At-Tho'at resmi berdiri dibawah saksi mata para warga serta donatur perumahan. Dan hingga saat ini, masjid At-Tho'at dalam pelaksanaannya untuk peribadatan telah ikut membantu kegiatan islami seperti, pengajian umum, shalat dua ied, pengajian bapak-bapak dan ibu-ibu, dan lain sebagainya.</p>
+                </div>
+            </div>
+        </div>
+
+        {{-- MISI KAMI --}}
+        <div class="row g-2">
+            <div class="col-lg-12 col-md-12">
+                <h1 class="text-center p-3">Misi Kami</h1>
+                <div class="row">
+                    <div class="col-lg-3 col-md-12">
+                        <div class="card bg-secondary text-white">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Jamaah Mandiri</h5>
+                                <p class="card-text">Memberikan pelatihan sholat kepada warga yang belum bisa sholat, sehingga tidak malu lagi untuk pergi ke masjid untuk sholat berjamaah.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <div class="card bg-secondary text-white">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Peta Dakwah</h5>
+                                <p class="card-text">Masjid harus memiliki peta dakwah yang jelas, wilayah kerja yang nyata, dan jama’ah yang terdata. Sehingga bisa terukur di pertanggungjawabkan.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <div class="card bg-secondary text-white">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Pembinaan Remaja</h5>
+                                <p class="card-text">Menyelenggarakan membina remaja masjid melalui kegitan pelatihan dan pemberdayaan ekonomi ummat dan kegiatan kesenian.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-12">
+                        <div class="card bg-secondary text-white">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Majlis Ta'lim</h5>
+                                <p class="card-text">Menyelenggarakan pembinaan ummat melalui kegiatan Majlis Ta’lim dan Peringatan Hari-hari Besar Islam dan Menjadikan masjid sebagai pesantren.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        {{-- TRANSPARANSI DANA --}}
+        <div class="image-sldr p-5">
+            <img src="{{ asset('uploads/'.'transaparansi-dana.jpg') }}" alt="Masjid">
+            <div class="overlay-text-dana text-center">
+                <h4>TRANSPARANSI DANA</h4>
+                <h6>Ingin tahu lebih detail transparansi dana masjid At-Thoat</h6>
+                <h6>Silahkan kunjungi halaman dengan klik tombol dibawah ini</h6>
+                <a href="{{ route('laporan_keuangan.index') }}" class="btn btn-secondary">TRANSPARANSI DANA</a>
+            </div>
+        </div>
+
+        {{-- SUPPORT PROGRAM --}}
+        <div class="row g-2">
+            <div class="col-lg-12 col-md-12 text-center p-3">
+                <h1>Support Program Dakwah</h1>
+                <div class="alert alert-light" role="alert">
+                    <p>Support Program Dakwah Masjid At-Thoat selalu terdepan dalam aksi-aksi sosial. Anda dapat menjadi bagian dari kami dengan menjadi donatur untuk program -program Masjid At-Thoat. Insya Allah kami selalu berusaha untuk menyalurkan 100% sedekah anda kepada yang berhak menerima.</p>
+                    <a href="#" class="btn btn-primary">Lihat Program Dakwah</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-2">
+            <h2 class="p-3">Apa yang terbaru Hari ini ?</h2>
+            <div class="col-lg-8 col-md-12 left">
                 @php $i=0; @endphp
                 @foreach($post_data as $item)
                 @php $i++; @endphp
@@ -125,7 +251,6 @@
         </div>
     </div>
 </div>
-
 
 <div class="search-section">
     <div class="container">
@@ -278,16 +403,8 @@
                                 </div>
                             </div>
                         </div>
-
-
                         <!-- // News Of Category -->
-
-
                     @endforeach
-
-
-
-
                 </div>
             </div>
             <div class="col-lg-4 col-md-6 sidebar-col">
@@ -297,6 +414,23 @@
     </div>
 </div>
 
+{{-- LOKASI & ALAMAT MASJID --}}
+<div class="row g-2">
+    <div class="col-lg-12 col-md-12 text-center p-3">
+        <h1>Alamat Masjid</h1>
+        <div class="map-container">
+            <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3954.1487796299145!2d110.39269477471262!3d-7.645888675201066!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8ecafe674119e59b!2sMusholla+At-Thoat!5e0!3m2!1sid!2sid!4v1700000000000"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+    </div>
+</div>
 
 <script>
     (function($){

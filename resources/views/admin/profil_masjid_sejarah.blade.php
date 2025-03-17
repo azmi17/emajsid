@@ -3,12 +3,9 @@
 @section('heading', 'Edit Sejarah Masjid')
 
 @section('main_content')
-<div class="section-body">
-   
+    <div class="section-body">
         <div class="row">
             <div class="col-12">
-
-
                 @foreach($profil_data as $row)
                 <form action="{{ route('admin_profil_masjid_sejarah_update') }}" method="post">
                     @csrf
@@ -21,7 +18,7 @@
                             </div>
                             <div class="form-group mb-3">
                                 <label>Detail *</label>
-                                <textarea name="sejarah_detail" class="form-control" cols="30" rows="10">{{ $row->sejarah_detail }}</textarea>
+                                <textarea name="sejarah_detail" class="form-control snote" cols="30" rows="10">{{ $row->sejarah_detail }}</textarea>
                             </div>
                             <div class="form-group mb-3">
                                 <label>Status?</label>
@@ -37,12 +34,7 @@
                     </div>
                 </form>
                 @endforeach
-
-
-
             </div>
-            
         </div>
-    
-</div>
+    </div>
 @endsection
