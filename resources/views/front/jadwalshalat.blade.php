@@ -47,7 +47,7 @@
                                     <div class="card-body">
                                         <p class="text-center"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
                                             <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
-                                          </svg><span class="judul-kota"></span></p> {{-- the Lokasi must be shown here --}}
+                                          </svg><span class="judul-kota"></span></p> {{-- tampilkan nama lokasi kota --}}
                                         <ul class="list-group">
                                             <li class="list-group-item d-flex justify-content-between align-items-center">
                                               Imsak
@@ -84,9 +84,13 @@
                                   </div>
                             </div>
                         </div>
-
                   </div>
-                  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+                  <script
+                  src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+                  integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+                  crossorigin="anonymous">
+                  </script>
+
                   <script>
 
                     // Hapus localStorage saat halaman di load..
@@ -113,7 +117,7 @@
 
                     function hari(){
                       if(getMonth < 10){
-                        hari = `0${getDay}`;
+                        hari = `${getDay}`;
                       }
                       else{
                         hari = getDay
@@ -121,13 +125,14 @@
                       return hari
                     }
 
-                    const tanggal = `/${getYear}/${bulan()}/${hari()}`;
+                    const tanggal = `/${getYear}-${bulan()}-${hari()}`;
 
-                    const tampilKota = document.querySelector('.judul-kota');
-                    tampilKota.textContent = localStorage.judulkota;
+                    const tampilKota = document.querySelector('.judul-kota') ;
+                    tampilKota.textContent = localStorage.judulkota || 'KOTA BANDUNG';
 
                     function getJadwalShalat() {
-                        fetch('https://api.myquran.com/v2/sholat/jadwal/'+ parseInt(localStorage.idkota) + tanggal)
+                        const idKota = parseInt(localStorage.idkota) || 1632; // Default ke 1632 (Kota Bandung)
+                        fetch('https://api.myquran.com/v2/sholat/jadwal/' + idKota + tanggal)
                         .then(response => response.json())
                         .then(data => {
                             const jadwal = data.data.jadwal;
@@ -154,12 +159,10 @@
                         cardList.classList.remove('hidden-list');
                         const fetchUrl = `https://api.myquran.com/v2/sholat/kota/cari/${valueSearch}`;
 
-                        fetch(fetchUrl)
-                        .then(response => response.json())
+                        fetch(fetchUrl).then(response => response.json())
                         .then(response => {
                             const kota = response.data;
                             let listKota = ``;
-                            // console.log("Kota: ", kota);
 
                             kota.forEach(k => {
                             listKota += `<a href="#" data-idkota="${k.id}" id="nama-kota" class="list-group-item list-group-item-action">${k.lokasi}</a>`;
@@ -187,6 +190,7 @@
                     });
 
                     getJadwalShalat();
+
                   </script>
                 </body>
               </html>
